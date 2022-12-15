@@ -6,7 +6,7 @@ router.get("/categories",(req,res)=>{
     Category.find()
     .then(categories => {
         res.json({
-            categories:categories,
+            list:categories,
             success:1
         })
         
@@ -16,7 +16,6 @@ router.get("/categories",(req,res)=>{
 })
 
 router.post("/addCategory",(req,res)=>{
-   
     const newCategory = new Category({
         categoryName : req.body.categoryName
     })
@@ -25,7 +24,6 @@ router.post("/addCategory",(req,res)=>{
         success:1,
         message:"success"
     })
-    
 })
 
 module.exports = router
