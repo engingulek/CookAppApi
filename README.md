@@ -1,3 +1,5 @@
+Server çalıştırmak için bazı bilgilere ihtiyaç vardır iletişime geçebilirsiniz
+
 
 # Getting started
 - Clone the repository
